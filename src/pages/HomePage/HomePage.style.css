@@ -1,0 +1,8 @@
+.HomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.PageContent {
+}
