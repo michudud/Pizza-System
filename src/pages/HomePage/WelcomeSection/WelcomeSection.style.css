@@ -16,8 +16,25 @@
 }
 
 .content {
-  width: 1200px;
-  height: 400px;
-  color: white;
-  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  min-height: 400px;
+  padding: 40px;
+  background-color: rgba(2, 2, 2, 0.3);
+  border-radius: 5px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 30px;
 }
