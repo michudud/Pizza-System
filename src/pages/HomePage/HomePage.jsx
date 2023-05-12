@@ -12,7 +12,6 @@ const HomePage = () => {
         <WelcomeSection />
         <MenuSection />
         <div>about</div>
-        <div>check menu</div>
         <div>special offer</div>
       </div>
       <Footer />

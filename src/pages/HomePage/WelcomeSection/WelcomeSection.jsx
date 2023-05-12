@@ -12,7 +12,7 @@ const WelcomeSection = () => {
             from choosing the best ingredients to controlling the temperature in
             the oven. We're sure you'll love our specialties and want to come
             back for more, even if you don't like pizza (you sure you're human?
-            it doesn't matter, you're welcome anyway)
+            it doesn't matter, you're welcome anyway).
           </p>
           <h2>Pizza is Love, Pizza is Life.</h2>
         </div>
