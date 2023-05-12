@@ -1,2 +1,46 @@
-.WelcomeSection {
+.MenuSection {
+  display: flex;
+  justify-content: center;
+  margin: 0 100px;
+}
+
+.MenuSection .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.MenuSection .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MenuSection .categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.MenuSection .menu_category {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 440px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.MenuSection .category_img {
+  width: 100%;
+  height: 400px;
+}
+
+.MenuSection .category_name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 26px;
 }
