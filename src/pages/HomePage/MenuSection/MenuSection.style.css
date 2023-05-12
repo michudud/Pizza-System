@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   margin: 0 100px;
+  margin: 20px;
 }
 
 .MenuSection .content {
@@ -14,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px;
 }
 
 .MenuSection .categories {
@@ -25,11 +27,18 @@
 .MenuSection .menu_category {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 600px;
   height: 440px;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.MenuSection .menu_category:hover .category_description {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .MenuSection .category_img {
@@ -43,4 +52,17 @@
   align-items: center;
   height: 100%;
   font-size: 26px;
+  background-image: linear-gradient(to right, green, white, white, red);
+}
+
+.MenuSection .category_description {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  line-height: 30px;
+  color: whitesmoke;
 }
