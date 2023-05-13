@@ -1,0 +1,19 @@
+.DealsSection {
+  display: flex;
+  justify-content: center;
+  margin: 0 100px;
+  margin: 20px;
+}
+
+.DealsSection .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.DealsSection .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}

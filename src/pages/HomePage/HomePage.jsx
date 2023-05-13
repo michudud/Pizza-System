@@ -5,6 +5,7 @@ import WelcomeSection from "./WelcomeSection";
 import MenuSection from "./MenuSection";
 import NewsSection from "./NewsSection";
 import AboutSection from "./AboutSection";
+import DealsSection from "./DealsSection";
 
 const HomePage = () => {
   return (
@@ -15,7 +16,7 @@ const HomePage = () => {
         <MenuSection />
         <AboutSection />
         <NewsSection />
-        <div>special offer</div>
+        <DealsSection />
       </div>
       <Footer />
     </div>
