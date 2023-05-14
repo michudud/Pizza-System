@@ -8,6 +8,7 @@ const DealsSection = () => {
           <h1>Amazing Deals</h1>
           <p>check out our deals</p>
         </div>
+        <div className="deals"></div>
       </div>
     </div>
   );

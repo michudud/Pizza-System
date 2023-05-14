@@ -17,3 +17,9 @@
   align-items: center;
   margin: 20px;
 }
+
+.DealsSection .deals {
+  width: 1000px;
+  height: 400px;
+  background-color: orange;
+}

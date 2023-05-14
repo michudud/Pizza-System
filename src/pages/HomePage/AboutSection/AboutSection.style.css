@@ -17,3 +17,10 @@
   align-items: center;
   margin: 20px;
 }
+
+.AboutSection .pizza_history,
+.our_pizza {
+  height: 200px;
+  margin: 20px;
+  background-color: aqua;
+}

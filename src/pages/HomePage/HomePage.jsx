@@ -3,8 +3,8 @@ import Header from "./../../components/Header";
 import Footer from "./../../components/Footer";
 import WelcomeSection from "./WelcomeSection";
 import MenuSection from "./MenuSection";
-import NewsSection from "./NewsSection";
 import AboutSection from "./AboutSection";
+import NewsSection from "./NewsSection";
 import DealsSection from "./DealsSection";
 
 const HomePage = () => {
