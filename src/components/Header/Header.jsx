@@ -1,5 +1,5 @@
 import "./Header.style.css";
-import logo_small from "./../../assets/images/logo_small.png";
+import logo_png from "./../../assets/images/logo_png.png";
 import logo_svg from "./../../assets/images/logo_svg.svg";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
@@ -27,7 +27,7 @@ const Header = () => {
         className="logo"
         src={logo_svg}
         onError={() => {
-          this.src = logo_small;
+          this.src = logo_png;
         }}
       />
       <div className="navigation">
