@@ -1,4 +1,6 @@
 import "./AboutSection.style.css";
+import pizza_history_png from "./../../../assets/images/pizza_history_png.png";
+import pizza_history_svg from "./../../../assets/images/pizza_history_svg.svg";
 
 const AboutSection = () => {
   return (
@@ -9,8 +11,14 @@ const AboutSection = () => {
           <p>about us section</p>
         </div>
         <div className="pizza_history">
-          <img />
-          <p>pizza history</p>
+          <img
+            className="pizza_history_img"
+            src={pizza_history_svg}
+            onError={() => {
+              this.src = pizza_history_png;
+            }}
+          />
+          <p className="pizza_history_description">pizza history</p>
         </div>
         <div className="our_pizza">
           <img />

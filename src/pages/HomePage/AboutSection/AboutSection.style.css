@@ -1,7 +1,6 @@
 .AboutSection {
   display: flex;
   justify-content: center;
-  margin: 0 100px;
   margin: 20px;
 }
 
@@ -19,8 +18,28 @@
 }
 
 .AboutSection .pizza_history,
-.our_pizza {
-  height: 200px;
+.AboutSection .our_pizza {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
   margin: 20px;
-  background-color: aqua;
+  /* background-color: aqua; */
+}
+
+.AboutSection .pizza_history_img {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(54, 54, 54, 1);
+}
+
+.AboutSection .pizza_history_description {
+  /* background-color: #f5f5f5; */
+  height: 260px;
+  width: 800px;
+  border-radius: 0 5px 5px 0;
+  /* border: 1px solid black; */
+  border-left: none;
+  box-shadow: 0px 0px 10px 0px rgba(54, 54, 54, 1);
 }
