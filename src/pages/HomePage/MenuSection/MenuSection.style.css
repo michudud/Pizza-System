@@ -1,7 +1,6 @@
 .MenuSection {
   display: flex;
   justify-content: center;
-  margin: 0 100px;
   margin: 20px;
 }
 
@@ -33,6 +32,7 @@
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 0px rgba(54, 54, 54, 1);
 }
 
 .MenuSection .menu_category:hover .category_description {
