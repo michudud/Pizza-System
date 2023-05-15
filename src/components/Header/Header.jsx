@@ -35,7 +35,7 @@ const Header = () => {
           <path
             d="M 50 20 L 30 20 A 20 20 0 0 1 10 40 L 10 100 A 20 20 0 0 1 30 120 L 50 120"
             stroke="#F5F5F5"
-            strokeWidth="6"
+            strokeWidth={isScrolled ? "4" : "6"}
             strokeLinecap="square"
             fill="none"
             vectorEffect="non-scaling-stroke"
@@ -84,7 +84,7 @@ const Header = () => {
           <path
             d="M 0 20 L 20 20 A 20 20 0 0 0 40 40 L 40 100 A 20 20 0 0 0 20 120 L 0 120"
             stroke="#F5F5F5"
-            strokeWidth="6"
+            strokeWidth={isScrolled ? "4" : "6"}
             strokeLinecap="square"
             fill="none"
             vectorEffect="non-scaling-stroke"
