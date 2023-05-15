@@ -1,10 +1,28 @@
 import "./Header.style.css";
 import logo_small from "./../../assets/images/logo_small.png";
 import logo_svg from "./../../assets/images/logo_svg.svg";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isScrolled, setScrolled] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    if (window.pageYOffset > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   return (
-    <div className="Header">
+    <div className={`Header ${isScrolled ? "Header_scrolled" : ""}`}>
       <img
         className="logo"
         src={logo_svg}
@@ -13,35 +31,12 @@ const Header = () => {
         }}
       />
       <div className="navigation">
-        {/* <svg className="navigation_border" viewBox="0 0 900 140"> */}
-        {/* outer_border */}
-        {/* <path
-            d="M 40 20 L 860 20 A 20 20 0 0 0 880 40 L 880 100 A 20 20 0 0 0 860 120 L 40 120 A 20 20 0 0 0 20 100 L 20 40 A 20 20 0 0 0 40 20"
-            stroke="#F5F5F5"
-            strokeWidth="5"
-            stroke-linecap="square"
-            fill="none"
-            vectorEffect="non-scaling-stroke"
-          /> */}
-        {/* /outer_border */}
-        {/* inner_border */}
-        {/* <path
-            d="M 50 30 L 850 30 A 20 20 0 0 0 870 50 L 870 90 A 20 20 0 0 0 850 110 L 50 110 A 20 20 0 0 0 30 90 L 30 50 A 20 20 0 0 0 50 30"
-            stroke="#F5F5F5"
-            strokeWidth="2"
-            stroke-linecap="square"
-            fill="none"
-            vectorEffect="non-scaling-stroke"
-          /> */}
-        {/* /inner_border */}
-        {/* </svg> */}
-
         <svg className="navigation_border_left" viewBox="0 0 50 140">
           <path
             d="M 50 20 L 30 20 A 20 20 0 0 1 10 40 L 10 100 A 20 20 0 0 1 30 120 L 50 120"
             stroke="#F5F5F5"
             strokeWidth="6"
-            stroke-linecap="square"
+            strokeLinecap="square"
             fill="none"
             vectorEffect="non-scaling-stroke"
           />
@@ -49,7 +44,7 @@ const Header = () => {
             d="M 50 30 L 40 30 A 20 20 0 0 1 20 50 L 20 90 A 20 20 0 0 1 40 110 L 50 110"
             stroke="#F5F5F5"
             strokeWidth="2"
-            stroke-linecap="square"
+            strokeLinecap="square"
             fill="none"
             vectorEffect="non-scaling-stroke"
           />
@@ -57,11 +52,31 @@ const Header = () => {
         <div className="navigation_border_center_outer">
           <div className="navigation_border_center_inner">
             <ul>
-              <li>Home</li>
-              <li>Menu</li>
-              <li>Discover</li>
-              <li>About Us</li>
-              <li>Contact</li>
+              <li>
+                <Link className="navigation_link" to="/">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link className="navigation_link" to="/">
+                  Menu
+                </Link>
+              </li>
+              <li>
+                <Link className="navigation_link" to="/">
+                  Discover
+                </Link>
+              </li>
+              <li>
+                <Link className="navigation_link" to="/">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link className="navigation_link" to="/">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -70,7 +85,7 @@ const Header = () => {
             d="M 0 20 L 20 20 A 20 20 0 0 0 40 40 L 40 100 A 20 20 0 0 0 20 120 L 0 120"
             stroke="#F5F5F5"
             strokeWidth="6"
-            stroke-linecap="square"
+            strokeLinecap="square"
             fill="none"
             vectorEffect="non-scaling-stroke"
           />
@@ -78,7 +93,7 @@ const Header = () => {
             d="M 0 30 L 10 30 A 20 20 0 0 0 30 50 L 30 90 A 20 20 0 0 0 10 110 L 0 110"
             stroke="#F5F5F5"
             strokeWidth="2"
-            stroke-linecap="square"
+            strokeLinecap="square"
             fill="none"
             vectorEffect="non-scaling-stroke"
           />
