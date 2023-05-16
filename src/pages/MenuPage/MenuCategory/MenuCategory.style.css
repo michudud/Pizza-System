@@ -1,0 +1,30 @@
+.MenuCategory {
+  width: 1300px;
+}
+
+.MenuCategory .description {
+  margin: 20px;
+}
+
+.MenuCategory .pizzas {
+}
+
+.MenuCategory .pizza {
+  display: flex;
+  margin: 20px;
+}
+
+.MenuCategory .pizza_img {
+  width: 150px;
+  height: 150px;
+  background-color: darkorange;
+  border-radius: 5px;
+}
+
+.MenuCategory .pizza_details {
+  margin: 20px;
+}
+
+.MenuCategory .pizza_name {
+  margin-bottom: 20px;
+}
