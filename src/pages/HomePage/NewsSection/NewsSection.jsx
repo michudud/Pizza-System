@@ -9,7 +9,7 @@ const NewsSection = () => {
     "item4",
     "item5",
   ]);
-  const displayedNewsNumber = 3;
+  const displayedNewsNumber = 4;
 
   const handleRight = () => {
     const changedNews = [...news];
@@ -29,7 +29,6 @@ const NewsSection = () => {
           <h1>Latest News</h1>
           <p>Check out what's going on in pizza world</p>
         </div>
-        {/* <div className="categories"></div> */}
         <div className="carousel">
           <button className="carousel_button" onClick={handleLeft}>
             {"<"}
@@ -37,7 +36,7 @@ const NewsSection = () => {
           {news.map((item, index) => {
             if (index < displayedNewsNumber) {
               return (
-                <div className="carousel_item" key={item}>
+                <div className="news" key={item}>
                   {item}
                 </div>
               );

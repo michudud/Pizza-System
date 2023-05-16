@@ -32,7 +32,7 @@
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0px 0px 10px 0px rgba(54, 54, 54, 1);
+  box-shadow: 0px 0px 10px 0px rgb(54, 54, 54);
 }
 
 .MenuSection .menu_category:hover .category_description {

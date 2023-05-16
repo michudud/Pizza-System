@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div className="HomePage">
       <Header />
-      <div className="PageContent">
+      <div className="page_content">
         <WelcomeSection />
         <MenuSection />
         <AboutSection />

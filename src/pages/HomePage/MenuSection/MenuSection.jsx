@@ -10,7 +10,7 @@ const MenuSection = () => {
       <div className="content">
         <div className="description">
           <h1>Check our Menu</h1>
-          <p>We've got something for everyone.</p>
+          <p>We've got something for everyone</p>
         </div>
         <div className="categories">
           <div className="menu_category">
