@@ -6,14 +6,15 @@ const MenuCategory = ({ category }) => {
     <div className="MenuCategory">
       <div className="content">
         <div className="description">
-          <h1>{category.name}</h1>
-          <p>{category.description}</p>
+          <h1 className="category_name">{category.name}</h1>
+          <p className="category_description">{category.description}</p>
+          <hr />
         </div>
         <div className="pizzas">
           {category.pizzas.map((pizza) => {
             return (
               <div className="pizza" key={pizza.name}>
-                <p className="pizza_img">{pizza.image}</p>
+                <img className="pizza_img" src={pizza.image} />
                 <div className="pizza_details">
                   <h3 className="pizza_name">{pizza.name}</h3>
                   <p className="pizza_ingredients">

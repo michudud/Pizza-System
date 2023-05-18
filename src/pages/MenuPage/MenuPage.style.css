@@ -1,9 +1,21 @@
 .MenuPage {
-}
-
-.MenuPage .menu {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+.MenuPage .page_content {
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  box-shadow: 0px 0px 10px 0px rgb(54, 54, 54);
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 50px;
+}
+
+.MenuPage .page_title {
+  align-self: center;
+  font-size: 46px;
+  margin: 20px;
 }

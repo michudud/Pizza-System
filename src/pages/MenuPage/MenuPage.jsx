@@ -4,20 +4,21 @@ import Header from "../../components/Header";
 import MenuCategory from "./MenuCategory";
 import {
   classicCategory,
-  vegetarianCetegory,
-  veganCetegory,
-  forbiddenCetegory,
+  vegetarianCategory,
+  veganCategory,
+  forbiddenCategory,
 } from "./menuItems";
 
 const MenuPage = () => {
   return (
     <div className="MenuPage">
       <Header />
-      <div className="menu">
+      <div className="page_content">
+        <h1 className="page_title">Menu</h1>
         <MenuCategory category={classicCategory} />
-        <MenuCategory category={vegetarianCetegory} />
-        <MenuCategory category={veganCetegory} />
-        <MenuCategory category={forbiddenCetegory} />
+        <MenuCategory category={vegetarianCategory} />
+        <MenuCategory category={veganCategory} />
+        <MenuCategory category={forbiddenCategory} />
       </div>
       <Footer />
     </div>
