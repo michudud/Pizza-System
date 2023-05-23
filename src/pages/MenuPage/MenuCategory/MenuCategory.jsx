@@ -18,10 +18,11 @@ const MenuCategory = ({ category }) => {
                 <div className="pizza_details">
                   <h3 className="pizza_name">{pizza.name}</h3>
                   <p className="pizza_ingredients">
-                    {pizza.ingredients.map((ingredient) => {
+                    {pizza.ingredients.map((ingredient, index, ingredients) => {
                       return (
                         <Fragment key={ingredient}>
-                          {ingredient + ", "}
+                          {ingredient +
+                            (index === ingredients.length - 1 ? "" : ", ")}
                         </Fragment>
                       );
                     })}

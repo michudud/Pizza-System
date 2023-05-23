@@ -1,4 +1,4 @@
-const assetsSrc = "./../../../assets/images/menu/";
+const menuAssetsSrc = "./../../../assets/images/menu/";
 
 export const classicCategory = {
   name: "Classic",
@@ -14,7 +14,7 @@ export const classicCategory = {
         "Spinach",
         "Parmesan",
       ],
-      image: assetsSrc + "classic_1.jpg",
+      image: menuAssetsSrc + "classic_1.jpg",
     },
     {
       name: "na--me",
@@ -24,7 +24,7 @@ export const classicCategory = {
         "Seasoned Minced Beef",
         "Jalapeños",
       ],
-      image: assetsSrc + "classic_2.jpg",
+      image: menuAssetsSrc + "classic_2.jpg",
     },
     {
       name: "na--me",
@@ -36,7 +36,7 @@ export const classicCategory = {
         "Black Olives",
         "Rucola",
       ],
-      image: assetsSrc + "classic_3.jpg",
+      image: menuAssetsSrc + "classic_3.jpg",
     },
     {
       name: "na--me",
@@ -46,7 +46,7 @@ export const classicCategory = {
         "Jalapeños",
         "Caramelized Onions",
       ],
-      image: assetsSrc + "classic_4.jpg",
+      image: menuAssetsSrc + "classic_4.jpg",
     },
     {
       name: "na--me",
@@ -59,7 +59,7 @@ export const classicCategory = {
         "Red Peppers",
         "Black Olives",
       ],
-      image: assetsSrc + "classic_5.jpg",
+      image: menuAssetsSrc + "classic_5.jpg",
     },
     {
       name: "na--me",
@@ -70,7 +70,7 @@ export const classicCategory = {
         "Caramelized Onions",
         "Black Olives",
       ],
-      image: assetsSrc + "classic_6.jpg",
+      image: menuAssetsSrc + "classic_6.jpg",
     },
     {
       name: "na--me",
@@ -85,7 +85,7 @@ export const classicCategory = {
         "Pickles",
         "Black Olives",
       ],
-      image: assetsSrc + "classic_7.jpg",
+      image: menuAssetsSrc + "classic_7.jpg",
     },
   ],
 };
@@ -105,7 +105,7 @@ export const vegetarianCategory = {
         "Red Onions",
         "Smoked Cheese",
       ],
-      image: assetsSrc + "vegetarian_1.jpg",
+      image: menuAssetsSrc + "vegetarian_1.jpg",
     },
     {
       name: "na--me",
@@ -119,7 +119,7 @@ export const vegetarianCategory = {
         "Jalapeños",
         "Falafel",
       ],
-      image: assetsSrc + "vegetarian_2.jpg",
+      image: menuAssetsSrc + "vegetarian_2.jpg",
     },
     {
       name: "na--me",
@@ -132,7 +132,7 @@ export const vegetarianCategory = {
         "Green Olives",
         "Black Olives",
       ],
-      image: assetsSrc + "vegetarian_3.jpg",
+      image: menuAssetsSrc + "vegetarian_3.jpg",
     },
   ],
 };
@@ -151,12 +151,12 @@ export const veganCategory = {
         "Red Onions",
         "Jalapeños",
       ],
-      image: assetsSrc + "vegan_1.jpg",
+      image: menuAssetsSrc + "vegan_1.jpg",
     },
     {
       name: "Veganium",
       ingredients: ["Tomato Sauce", "Vegan Mozzarella", "Fried Tofu", "Chives"],
-      image: assetsSrc + "vegan_veganium.jpg",
+      image: menuAssetsSrc + "vegan_veganium.jpg",
     },
     {
       name: "na--me",
@@ -167,7 +167,7 @@ export const veganCategory = {
         "Red Peppers",
         "Tomatoes",
       ],
-      image: assetsSrc + "vegan_3.jpg",
+      image: menuAssetsSrc + "vegan_3.jpg",
     },
   ],
 };
@@ -179,12 +179,12 @@ export const forbiddenCategory = {
     {
       name: "Momoa",
       ingredients: ["Tomato Sauce", "Mozzarella", "Ham", "Pineapple"],
-      image: assetsSrc + "forbidden_momoa.jpg",
+      image: menuAssetsSrc + "forbidden_momoa.jpg",
     },
     {
       name: "Actinidiana",
       ingredients: ["Tomato Sauce", "Mozzarella", "Ham", "Kiwi"],
-      image: assetsSrc + "forbidden_actinidiana.jpg",
+      image: menuAssetsSrc + "forbidden_actinidiana.jpg",
     },
     {
       name: "Easter Breakfast",
@@ -195,7 +195,7 @@ export const forbiddenCategory = {
         "Boiled Eggs",
         "Green Olives",
       ],
-      image: assetsSrc + "forbidden_easterbreakfast.jpg",
+      image: menuAssetsSrc + "forbidden_easterbreakfast.jpg",
     },
   ],
 };
