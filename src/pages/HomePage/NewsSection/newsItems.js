@@ -31,4 +31,10 @@ export const allNews = [
       "Each of our pizzerias has a special corner with fresh water for your dog",
     image: newsAssetsSrc + "water_for_dogs.jpg",
   },
+  {
+    title: "Renovation",
+    description:
+      "Our original pizzeria will be closed in June due to renovation work",
+    image: newsAssetsSrc + "renovation.jpg",
+  },
 ];
