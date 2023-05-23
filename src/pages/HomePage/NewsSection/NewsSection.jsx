@@ -1,14 +1,9 @@
-import { useState } from "react";
 import "./NewsSection.style.css";
+import { allNews } from "./newsItems";
+import { useState } from "react";
 
 const NewsSection = () => {
-  const [news, setNews] = useState([
-    "item1",
-    "item2",
-    "item3",
-    "item4",
-    "item5",
-  ]);
+  const [news, setNews] = useState(allNews);
   const displayedNewsNumber = 4;
 
   const handleRight = () => {
@@ -36,8 +31,10 @@ const NewsSection = () => {
           {news.map((item, index) => {
             if (index < displayedNewsNumber) {
               return (
-                <div className="news" key={item}>
-                  {item}
+                <div className="news" key={item.title}>
+                  <img className="news_img" src={item.image} />
+                  <h4 className="news_title">{item.title}</h4>
+                  <p className="news_description">{item.description}</p>
                 </div>
               );
             }
