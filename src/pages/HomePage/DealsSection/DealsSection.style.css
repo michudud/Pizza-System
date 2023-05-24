@@ -24,7 +24,6 @@
   align-items: center;
   justify-content: center;
   width: 1200px;
-  height: 500px;
   background-color: whitesmoke;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgb(54, 54, 54);
@@ -32,7 +31,7 @@
 
 .DealsSection .deals p {
   margin: 20px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
   text-align: center;
 }
@@ -42,13 +41,18 @@
   justify-content: space-evenly;
   width: 100%;
   margin: 20px;
+  margin-top: 0;
 }
 
-.DealsSection .regular_promo,
-.DealsSection .daily_promo,
-.DealsSection .pizza_game {
+.DealsSection .promotion {
   width: 300px;
   height: 300px;
   background-color: forestgreen;
   border-radius: 5px;
+  overflow: hidden;
+}
+
+.DealsSection .promotion img {
+  width: 100%;
+  height: 100%;
 }

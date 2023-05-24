@@ -1,4 +1,6 @@
 import "./DealsSection.style.css";
+import regular_promo from "./../../../assets/images/regular_promo.jpg";
+import daily_promo from "./../../../assets/images/daily_promo.jpg";
 
 const DealsSection = () => {
   return (
@@ -16,9 +18,15 @@ const DealsSection = () => {
             catching pizza game and get promo code for special offers.
           </p>
           <div className="promo_section">
-            <div className="regular_promo"></div>
-            <div className="daily_promo"></div>
-            <div className="pizza_game"></div>
+            <div className="promotion">
+              <img src={regular_promo} />
+            </div>
+            <div className="promotion">
+              <img src={daily_promo} />
+            </div>
+            <div className="promotion">
+              <img />
+            </div>
           </div>
         </div>
       </div>
