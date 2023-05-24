@@ -34,7 +34,7 @@ export const allNews = [
   {
     title: "Renovation",
     description:
-      "Our original pizzeria will be closed in June due to renovation work",
+      "Our original pizzeria will be closed in June due to renovation works",
     image: newsAssetsSrc + "renovation.jpg",
   },
 ];
