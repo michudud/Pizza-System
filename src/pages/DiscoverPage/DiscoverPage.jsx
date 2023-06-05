@@ -1,5 +1,7 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
+import OurPizza from "./OurPizza";
+import PizzaHistory from "./PizzaHistory";
 import "./DiscoverPage.style.css";
 
 const DiscoverPage = () => {
@@ -7,7 +9,8 @@ const DiscoverPage = () => {
     <div className="DiscoverPage">
       <Header />
       <div className="page_content">
-        <h1 className="page_title">Discover</h1>
+        <OurPizza />
+        <PizzaHistory />
       </div>
       <Footer />
     </div>
