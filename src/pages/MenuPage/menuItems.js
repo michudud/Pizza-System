@@ -200,3 +200,9 @@ export const forbiddenCategory = {
     },
   ],
 };
+
+export const specialCategory = {
+  name: "Special",
+  description: "special description",
+  pizzas: [],
+};

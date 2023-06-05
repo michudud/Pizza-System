@@ -7,6 +7,7 @@ import {
   vegetarianCategory,
   veganCategory,
   forbiddenCategory,
+  specialCategory,
 } from "./menuItems";
 
 const MenuPage = () => {
@@ -19,6 +20,7 @@ const MenuPage = () => {
         <MenuCategory category={vegetarianCategory} />
         <MenuCategory category={veganCategory} />
         <MenuCategory category={forbiddenCategory} />
+        <MenuCategory category={specialCategory} />
       </div>
       <Footer />
     </div>
