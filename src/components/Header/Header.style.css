@@ -128,3 +128,10 @@
 .Header_scrolled .navigation_link {
   font-size: 16px;
 }
+
+@media (max-width: 1000px) {
+  .Header .navigation {
+    display: none;
+  }
+}
+/* add dropdown menu - in progres */

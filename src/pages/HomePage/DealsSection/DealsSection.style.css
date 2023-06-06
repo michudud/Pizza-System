@@ -1,7 +1,7 @@
 .DealsSection {
   display: flex;
   justify-content: center;
-  margin: 0 100px;
+  margin: 20px 100px;
   margin: 20px;
 }
 
@@ -23,7 +23,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   background-color: whitesmoke;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgb(54, 54, 54);
@@ -45,8 +46,9 @@
 }
 
 .DealsSection .promotion {
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 20px;
   background-color: forestgreen;
   border-radius: 5px;
   overflow: hidden;
@@ -55,4 +57,29 @@
 .DealsSection .promotion img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1200px) {
+  .DealsSection {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .DealsSection .promotion {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .DealsSection .promo_section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DealsSection .promotion {
+    width: 100%;
+    max-width: none;
+    max-height: none;
+  }
 }

@@ -27,8 +27,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 600px;
-  height: 440px;
+  max-width: 600px;
+  max-height: 440px;
   margin: 20px;
   border-radius: 5px;
   overflow: hidden;
@@ -43,14 +43,14 @@
 
 .MenuSection .category_img {
   width: 100%;
-  height: 400px;
+  max-height: 400px;
 }
 
 .MenuSection .category_name {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 40px;
   font-size: 26px;
   background-image: linear-gradient(to right, green, white, white, red);
 }
@@ -59,10 +59,21 @@
   position: absolute;
   display: none;
   width: 100%;
-  height: 400px;
+  height: calc(100% - 40px);
+  max-height: 400px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: 20px;
   line-height: 30px;
   color: whitesmoke;
+}
+
+@media (max-width: 1200px) {
+  .MenuSection {
+    margin: 20px 0;
+  }
+
+  .MenuSection .menu_category {
+    margin: 5px 0;
+  }
 }

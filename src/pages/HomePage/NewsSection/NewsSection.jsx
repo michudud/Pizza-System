@@ -1,10 +1,28 @@
 import "./NewsSection.style.css";
 import { allNews } from "./newsItems";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 const NewsSection = () => {
   const [news, setNews] = useState(allNews);
-  const displayedNewsNumber = 4;
+  const [displayedNewsNumber, setDisplayedNewsNumber] = useState(4);
+
+  useLayoutEffect(() => {
+    function updateNewsNumber() {
+      const currWidth = window.innerWidth;
+      if (currWidth < 700) {
+        setDisplayedNewsNumber(1);
+      } else if (currWidth < 1000) {
+        setDisplayedNewsNumber(2);
+      } else if (currWidth < 1250) {
+        setDisplayedNewsNumber(3);
+      } else {
+        setDisplayedNewsNumber(4);
+      }
+    }
+    window.addEventListener("resize", updateNewsNumber);
+    updateNewsNumber();
+    return () => window.removeEventListener("resize", updateNewsNumber);
+  }, []);
 
   const handleRight = () => {
     const changedNews = [...news];
