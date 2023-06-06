@@ -25,7 +25,8 @@ const DealsSection = () => {
               <img src={daily_promo} />
             </div>
             <div className="promotion">
-              <img />
+              in progress
+              {/* <img /> */}
             </div>
           </div>
         </div>

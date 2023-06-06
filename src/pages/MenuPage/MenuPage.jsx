@@ -21,6 +21,7 @@ const MenuPage = () => {
         <MenuCategory category={veganCategory} />
         <MenuCategory category={forbiddenCategory} />
         <MenuCategory category={specialCategory} />
+        in progress
       </div>
       <Footer />
     </div>
