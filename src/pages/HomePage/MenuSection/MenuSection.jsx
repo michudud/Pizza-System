@@ -11,10 +11,9 @@ const MenuSection = () => {
         </div>
         <div className="categories">
           {allSections.map((section) => {
-            const imgUrl = new URL(section.image, import.meta.url).href;
             return (
               <div className="menu_category" key={section.name}>
-                <img className="category_img" src={imgUrl} />
+                <img className="category_img" src={section.image} />
                 <div className="category_name">{section.name}</div>
                 <div className="category_description">
                   {section.description}

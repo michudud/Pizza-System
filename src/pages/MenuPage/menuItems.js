@@ -1,4 +1,22 @@
-const menuAssetsSrc = "./../../../assets/images/menu/";
+import classic_spicciana_img from "./../../assets/images/menu/classic_spicciana.jpg";
+import classic_parmenada_img from "./../../assets/images/menu/classic_parmenada.jpg";
+import classic_farmerado_img from "./../../assets/images/menu/classic_farmerado.jpg";
+import classic_mexsta_img from "./../../assets/images/menu/classic_mexsta.jpg";
+import classic_tomanto_img from "./../../assets/images/menu/classic_tomanto.jpg";
+import classic_tunasia_img from "./../../assets/images/menu/classic_tunasia.jpg";
+import classic_andchios_img from "./../../assets/images/menu/classic_andchios.jpg";
+
+import vegetarian_falafeliana_img from "./../../assets/images/menu/vegetarian_falafeliana.jpg";
+import vegetarian_lasveggies_img from "./../../assets/images/menu/vegetarian_lasveggies.jpg";
+import vegetarian_spicegrills_img from "./../../assets/images/menu/vegetarian_spicegrills.jpg";
+
+import vegan_animaless_img from "./../../assets/images/menu/vegan_animaless.jpg";
+import vegan_veganium_img from "./../../assets/images/menu/vegan_veganium.jpg";
+import vegan_topvegun_img from "./../../assets/images/menu/vegan_topvegun.jpg";
+
+import forbidden_momoa_img from "./../../assets/images/menu/forbidden_momoa.jpg";
+import forbidden_actinidiana_img from "./../../assets/images/menu/forbidden_actinidiana.jpg";
+import forbidden_easterbreakfast_img from "./../../assets/images/menu/forbidden_easterbreakfast.jpg";
 
 export const classicCategory = {
   name: "Classic",
@@ -12,7 +30,7 @@ export const classicCategory = {
         "Jalapeños",
         "Caramelized Onions",
       ],
-      image: menuAssetsSrc + "classic_spicciana.jpg",
+      image: classic_spicciana_img,
     },
     {
       name: "Parmenada",
@@ -24,7 +42,7 @@ export const classicCategory = {
         "Black Olives",
         "Rucola",
       ],
-      image: menuAssetsSrc + "classic_parmenada.jpg",
+      image: classic_parmenada_img,
     },
     {
       name: "Farmerado",
@@ -37,7 +55,7 @@ export const classicCategory = {
         "Red Peppers",
         "Black Olives",
       ],
-      image: menuAssetsSrc + "classic_farmerado.jpg",
+      image: classic_farmerado_img,
     },
     {
       name: "Mexsta",
@@ -47,7 +65,7 @@ export const classicCategory = {
         "Seasoned Minced Beef",
         "Jalapeños",
       ],
-      image: menuAssetsSrc + "classic_mexsta.jpg",
+      image: classic_mexsta_img,
     },
     {
       name: "Tomanto",
@@ -62,7 +80,7 @@ export const classicCategory = {
         "Pickles",
         "Black Olives",
       ],
-      image: menuAssetsSrc + "classic_tomanto.jpg",
+      image: classic_tomanto_img,
     },
     {
       name: "Tunasia",
@@ -73,7 +91,7 @@ export const classicCategory = {
         "Caramelized Onions",
         "Black Olives",
       ],
-      image: menuAssetsSrc + "classic_tunasia.jpg",
+      image: classic_tunasia_img,
     },
     {
       name: "Andchios",
@@ -85,7 +103,7 @@ export const classicCategory = {
         "Spinach",
         "Parmesan",
       ],
-      image: menuAssetsSrc + "classic_andchios.jpg",
+      image: classic_andchios_img,
     },
   ],
 };
@@ -106,7 +124,7 @@ export const vegetarianCategory = {
         "Jalapeños",
         "Falafel",
       ],
-      image: menuAssetsSrc + "vegetarian_falafeliana.jpg",
+      image: vegetarian_falafeliana_img,
     },
     {
       name: "Las Veggies",
@@ -119,7 +137,7 @@ export const vegetarianCategory = {
         "Green Olives",
         "Black Olives",
       ],
-      image: menuAssetsSrc + "vegetarian_lasveggies.jpg",
+      image: vegetarian_lasveggies_img,
     },
     {
       name: "Spice Grills",
@@ -133,7 +151,7 @@ export const vegetarianCategory = {
         "Jalapeños",
         "Smoked Cheese",
       ],
-      image: menuAssetsSrc + "vegetarian_spicegrills.jpg",
+      image: vegetarian_spicegrills_img,
     },
   ],
 };
@@ -152,12 +170,12 @@ export const veganCategory = {
         "Red Onions",
         "Jalapeños",
       ],
-      image: menuAssetsSrc + "vegan_animaless.jpg",
+      image: vegan_animaless_img,
     },
     {
       name: "Veganium",
       ingredients: ["Tomato Sauce", "Vegan Mozzarella", "Fried Tofu", "Chives"],
-      image: menuAssetsSrc + "vegan_veganium.jpg",
+      image: vegan_veganium_img,
     },
     {
       name: "Top Ve-Gun",
@@ -168,7 +186,7 @@ export const veganCategory = {
         "Red Peppers",
         "Tomatoes",
       ],
-      image: menuAssetsSrc + "vegan_topvegun.jpg",
+      image: vegan_topvegun_img,
     },
   ],
 };
@@ -180,12 +198,12 @@ export const forbiddenCategory = {
     {
       name: "Momoa",
       ingredients: ["Tomato Sauce", "Mozzarella", "Ham", "Pineapple"],
-      image: menuAssetsSrc + "forbidden_momoa.jpg",
+      image: forbidden_momoa_img,
     },
     {
       name: "Actinidiana",
       ingredients: ["Tomato Sauce", "Mozzarella", "Ham", "Kiwi"],
-      image: menuAssetsSrc + "forbidden_actinidiana.jpg",
+      image: forbidden_actinidiana_img,
     },
     {
       name: "Easter Breakfast",
@@ -196,7 +214,7 @@ export const forbiddenCategory = {
         "Boiled Eggs",
         "Green Olives",
       ],
-      image: menuAssetsSrc + "forbidden_easterbreakfast.jpg",
+      image: forbidden_easterbreakfast_img,
     },
   ],
 };
