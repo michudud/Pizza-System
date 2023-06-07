@@ -1,4 +1,4 @@
-const sectionsAssetsSrc = "./../../../assets/images/";
+const sectionsAssetsSrc = "./../../../Pizza-System/assets/images/";
 
 export const allSections = [
   {
