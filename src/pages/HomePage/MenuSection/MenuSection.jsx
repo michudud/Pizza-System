@@ -12,7 +12,7 @@ const MenuSection = () => {
         <div className="categories">
           {allSections.map((section) => {
             return (
-              <div className="menu_category">
+              <div className="menu_category" key={section.name}>
                 <img className="category_img" src={section.image} />
                 <div className="category_name">{section.name}</div>
                 <div className="category_description">
