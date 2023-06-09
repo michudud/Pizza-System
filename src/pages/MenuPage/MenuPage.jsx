@@ -9,6 +9,7 @@ import {
   forbiddenCategory,
   specialCategory,
 } from "./menuItems";
+import special_cheese_img from "./../../assets/images/menu/special_cheese.png";
 
 const MenuPage = () => {
   return (
@@ -21,7 +22,7 @@ const MenuPage = () => {
         <MenuCategory category={veganCategory} />
         <MenuCategory category={forbiddenCategory} />
         <MenuCategory category={specialCategory} />
-        in progress
+        <img className="special_category_img" src={special_cheese_img} />
       </div>
       <Footer />
     </div>

@@ -20,3 +20,8 @@
   font-size: 46px;
   margin: 20px;
 }
+
+.MenuPage .special_category_img {
+  border-radius: 5px;
+  margin: 0 20px;
+}
